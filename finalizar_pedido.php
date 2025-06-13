@@ -36,14 +36,12 @@ $stmt->execute();
 $pedido_id = $stmt->insert_id;
 $stmt->close();
 
-// Poderia inserir os itens em uma tabela `itens_pedido` se quisesse mais detalhado (não exigido no enunciado)
-
-// Envio de e-mail (apenas estrutura, precisa configurar o servidor de e-mail real)
+// Envio de e-mail
 $mensagem = "Obrigado pela compra!\nPedido nº: $pedido_id\nTotal: R$ " . number_format($total, 2, ',', '.');
 mail($email, "Confirmação de Pedido #$pedido_id", $mensagem);
 
-// Webhook (exemplo simples)
-$webhook_url = "https://seudominio.com/webhook.php"; // Altere para seu endpoint real
+// Webhook
+$webhook_url = "https://dominioficticiotlm.com/webhook.php"; 
 $status = 'confirmado';
 @file_get_contents($webhook_url . "?id=$pedido_id&status=$status");
 
