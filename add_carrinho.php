@@ -2,7 +2,7 @@
 // add_carrinho.php
 session_start();
 
-// Funções do carrinho — vamos importar ou repetir aqui (só a que precisa pra adicionar)
+// Funções do carrinho 
 function adicionar_ao_carrinho($produto_id, $variacao_id, $quantidade, $preco) {
     $key = $produto_id . '_' . ($variacao_id ?? '0');
 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $quantidade = filter_input(INPUT_POST, 'quantidade', FILTER_VALIDATE_INT);
     $preco = filter_input(INPUT_POST, 'preco', FILTER_VALIDATE_FLOAT);
 
-    // Variacao pode ser null (sem variação)
+    // Variacao pode ser null
     if ($produto_id === false || $quantidade === false || $quantidade < 1 || $preco === false || $preco < 0) {
         die('Dados inválidos.');
     }
