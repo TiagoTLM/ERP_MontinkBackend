@@ -1,5 +1,4 @@
 <?php
-// aplicar_cupom.php
 session_start();
 
 $mysqli = new mysqli('localhost', 'root', '', 'erp_db');
