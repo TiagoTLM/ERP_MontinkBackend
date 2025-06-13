@@ -1,5 +1,4 @@
 <?php
-// finalizar_pedido.php
 session_start();
 require_once 'carrinho.php';
 
