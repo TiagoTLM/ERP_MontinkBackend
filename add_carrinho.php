@@ -1,5 +1,4 @@
 <?php
-// add_carrinho.php
 session_start();
 
 // Funções do carrinho 
