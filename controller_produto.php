@@ -1,5 +1,4 @@
 <?php
-// controller_produto.php
 require_once 'db.php';
 
 function salvar_produto($nome, $preco, $variacoes = [], $estoques = []) {
