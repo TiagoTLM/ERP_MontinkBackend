@@ -1,5 +1,4 @@
 <?php
-// view_carrinho.php
 require_once 'carrinho.php';
 $itens = obter_carrinho();
 $subtotal = calcular_subtotal();
