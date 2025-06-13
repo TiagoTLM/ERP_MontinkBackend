@@ -1,5 +1,5 @@
 <?php
-// db.php - Conexão com o banco de dados
+//Conexão com o banco de dados
 $host = 'localhost';
 $db   = 'mini_erp';
 $user = 'root';
