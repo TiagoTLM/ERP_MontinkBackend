@@ -1,5 +1,4 @@
 <?php
-// ajustar_estoque.php
 $mysqli = new mysqli('localhost', 'root', '', 'mini_erp');
 if ($mysqli->connect_errno) {
     die("Falha na conexão: " . $mysqli->connect_error);
