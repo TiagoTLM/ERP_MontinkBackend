@@ -1,5 +1,4 @@
 <?php
-// carrinho.php
 session_start();
 
 function adicionar_ao_carrinho($produto_id, $variacao_id, $quantidade, $preco) {
