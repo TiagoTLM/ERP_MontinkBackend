@@ -1,5 +1,4 @@
 <?php
-// salvar_produto.php
 require_once 'controller_produto.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
