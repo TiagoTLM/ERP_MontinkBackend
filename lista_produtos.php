@@ -1,11 +1,10 @@
 <?php
-// lista_produtos.php
 $mysqli = new mysqli('localhost', 'root', '', 'mini_erp');
 if ($mysqli->connect_errno) {
     die("Falha na conexão: " . $mysqli->connect_error);
 }
 
-// Buscar produtos com quantidade total no estoque (soma das variações)
+// Buscar produtos com quantidade total no estoque
 $sql = "
     SELECT p.id, p.nome, p.preco, 
            COALESCE(SUM(e.quantidade), 0) AS estoque_total
