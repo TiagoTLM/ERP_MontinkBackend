@@ -1,5 +1,4 @@
 <?php
-// view_cupons.php
 $mysqli = new mysqli('localhost', 'root', '', 'erp_db');
 
 if ($mysqli->connect_errno) {
